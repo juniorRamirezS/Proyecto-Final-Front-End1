@@ -1,4 +1,229 @@
-*{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    max-width: 100%;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+/* .mobile {
+    display: none;
+} */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 65px 165px 65px 165px;
+}
+
+.primerMenu {
+    overflow: hidden; /* Limpiamos errores de float*/
+}
+
+li {
+    list-style-type: none;
+    float: left;
+    text-align: center;
+    width: 5rem;
+}
+
+.hamburguesa {
+    width: 60px;
+    height: 45px;
+
+}
+
+.portada {
+    padding: 65px 165px 65px 165px;
+    display: flex;
+    text-align: right;
+}
+
+h1 {
+    width: 450px;
+    height: 228px;
+    font-size: 50px;
+    margin: 20px;
+    color: #232C50
+}
+
+.portada, p {
+    font-size: 20px;
+    width: 450px;
+    margin: 50px;
+    font-weight: bold;
+}
+
+button {
+    background-color: #8B48BF;
+    color: #FFFFFF;
+    padding: 20px 50px 20px 50px;
+    border-radius: 30px;
+    transition: all 1s ease;
+    /* DUDA */
+}
+
+button:hover {
+    background-color: #9a82ac;
+    box-shadow: 0 4px 16px #4f4358;
+    transition: all 0.3s ease;
+}
+
+.contact {
+    /* margin: 20px; */
+}
+
+.seccion1 {
+    /* weight: auto; */
+    height: 168px;
+    background-color: #8B48BF;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.section1, h2 {
+    font-size: 36px;
+}
+
+.section1, p {
+    font-size: 16px;
+}
+
+.seccion2 {
+    background-color: #fafafa;
+    /* height: 430px; */
+    height: auto;
+    padding: 40px 0px 40px 0px;
+    display: grid;
+    
+}
+
+.numero {
+    background-color: #8B48BF;
+    color: #FFFFFF;
+    padding: 10px 25px 10px 25px;
+    border-radius: 20px;
+}
+
+.titulo {
+    height: 23px;
+    padding: 10px 25px 10px 25px;
+}
+
+.section2, p {
+    width: 500px;
+    font-size: 16px;
+}
+
+h3 {
+    font-size: 40px;
+    color: #242e53;
+    text-align: center;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.personaje {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor h4{
+    font-size: 16px;
+}
+.contenedor p {
+    font-size: 16px;
+    width: 403px;
+    height: 100px;
+}
+
+.section3 button{
+
+}
+
+.seccion4 {
+    /* weight: auto; */
+    height: 168px;
+    background-color: #8B48BF;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.section4, h2 {
+    font-size: 36px;
+}
+
+.section4, p {
+    font-size: 16px;
+}
+
+.boton_diferente {
+    background-color: #FFFFFF;
+    color: #8B48BF;
+}
+
+.boton_diferente:hover {
+    background-color: #9a82ac;
+    color: #FFFFFF;
+    box-shadow: 0 4px 16px #4f4358;
+    transition: all 0.3s ease;
+}
+
+footer {
+    background-color: #1e1e26;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+}
+
+.pieDePagina {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.logos {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+}
+
+.logoFooter {
+    fill: #FFFFFF;
+}
+
+.derechos {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+@media (max-width: 1440px) {
+    
+
+    .primerMenu {
+        display: none;
+    }
+    .botonContacto {
+        display: none;
+    }
+}
+
+@media (min-width: 1440px) {
+    .hamburguesa {
+        display: none;
+    }
 }
