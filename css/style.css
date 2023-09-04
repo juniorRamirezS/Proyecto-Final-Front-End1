@@ -246,8 +246,12 @@ input[type=text]{
     fill: #FFFFFF;
 }
 
-.derechos {
-    align-self: center;
+.box-footer.box2 {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    justify-content: right;
 }
 
 
