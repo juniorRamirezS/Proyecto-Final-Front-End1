@@ -11,18 +11,18 @@ body {
     flex-direction: column;
 }
 
-/* .mobile {
-    display: none;
-} */
-
 header {
     display: flex;
     justify-content: space-between;
-    padding: 65px 165px 65px 165px;
+    align-items: center;
+    height: 12vh;
+    padding: 0 12vw 0;
+    margin: 2vw 0 2vw;
+    background-color: cornflowerblue;
 }
 
 .menu-navegacion {
-    overflow: hidden;
+    /* overflow: hidden; */
     /* Limpiamos errores de float*/
 }
 
@@ -31,33 +31,6 @@ li {
     float: left;
     text-align: center;
     width: 5rem;
-}
-
-.hamburguesa {
-    width: 60px;
-    height: 45px;
-
-}
-
-.portada {
-    padding: 65px 165px 65px 165px;
-    display: flex;
-    text-align: right;
-}
-
-h1 {
-    width: 450px;
-    height: 228px;
-    font-size: 50px;
-    margin: 20px;
-    color: #232C50
-}
-
-.portada, p {
-    font-size: 20px;
-    width: 450px;
-    margin: 50px;
-    font-weight: bold;
 }
 
 button {
@@ -75,23 +48,66 @@ button:hover {
     transition: all 0.3s ease;
 }
 
+.hamburguesa {
+    width: 60px;
+    height: 45px;
+}
+
+.portada {
+    display: flex;
+    height: auto;
+    width: 100%;
+    padding: 0 12vw 0;
+    margin: 2vw 0 2vw;
+    background-color: deepskyblue;
+    justify-content: space-between;
+}
+
+.portada img {
+    height: 60%;
+}
+
+h1 {
+    width: 40%;
+    font-size: 3rem;
+    color: #232C50;
+    padding: 0 2vw 0;
+    margin: 1vw 1vw 1vw;
+}
+
+.portada p {
+    font-size: 1.25rem;
+    width: 40vw;
+    font-weight: bold;
+    padding: 0 2vw 0;
+    margin: 1vw 1vw 1vw;
+}
+
+.boton-contacto-portada {
+    margin: 1vw 3vw 1vw;
+}
+
+.portada-derecha {
+    text-align: right ;
+}
+
 .texto-info {
-    /* weight: auto; */
-    height: 168px;
+    height: 20vh;
     background-color: #8B48BF;
     color: #FFFFFF;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    padding: 0 12vw 0;
 }
 
-.texto-info,
-h2 {
-    font-size: 36px;
+.texto-info h2 {
+    width: 45%;
+    font-size: 2.25rem;
 }
 
-.texto-info, p {
-    font-size: 16px;
+.texto-info p {
+    width: 45%;
 }
 
 .menu-info {
@@ -211,6 +227,30 @@ footer {
 
 .derechos {
     align-self: center;
+}
+
+
+@media (max-width: 800px) {
+    .menu-navegacion {
+        display: none;
+        }
+    .boton-contacto{
+        display: none;
+    }
+
+    .portada {
+        display: flex;
+        flex-direction: column
+    }
+}
+
+@media (min-width: 1000px) {
+    .hamburguesa {
+        display: none;
+    }
+    .mobile {
+        display: none;
+    }
 }
 
 
