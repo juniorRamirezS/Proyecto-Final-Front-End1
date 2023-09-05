@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 16px;
     /*max-width: 100%;*/
 }
 
@@ -69,7 +70,7 @@ button:hover {
 }
 
 h1 {
-    width: 40%;
+    width: 100%;
     font-size: 3rem;
     color: #232C50;
     padding: 0 2vw 0;
@@ -280,7 +281,7 @@ input[type=text] {
     width: 100%;
 }
 .lista-redes a{
-width: 15%;
+width: 10%;
 text-align: center;
 }
 .logoFooter {
