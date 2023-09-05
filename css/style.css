@@ -39,6 +39,7 @@ button {
     padding: 20px 50px 20px 50px;
     border-radius: 30px;
     transition: all 1s ease;
+    cursor: pointer;
     /* DUDA */
 }
 
@@ -88,7 +89,7 @@ h1 {
 }
 
 .portada-derecha {
-    text-align: right ;
+    text-align: right;
 }
 
 .texto-info {
@@ -110,6 +111,8 @@ h1 {
     width: 45%;
 }
 
+/*------------------------------------------ tarjetas Info --------------------------------*/
+
 .menu-info {
     background-color: #fafafa;
     padding: 3%;
@@ -119,33 +122,40 @@ h1 {
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
+    gap: 40px;
 }
-.box-info{
+
+.box-info {
     width: 40%;
     padding: 1%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: stretch;
-    gap: 1%;
+    gap: 25px;
 }
 
-.titulo {
+.box-info-contenido.titulo {
     color: #323851;
     font-weight: bold;
     height: 23px;
     padding: 10px 25px 10px 25px;
 }
+
 .numero {
     background-color: #8B48BF;
     color: #FFFFFF;
     padding: 10px 25px 10px 25px;
     border-radius: 20px;
 }
-.box-info p{
+
+.box-info-contenido p {
     color: #B3B2B7;
+    font-style: normal;
+    text-align: justify;
 }
-.menu-cards{
+/*------------------------------------------ Cards ------------------------------------*/
+.menu-cards {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -153,6 +163,7 @@ h1 {
     align-content: space-around;
     padding: 3% 2%;
 }
+
 .container-cards {
     width: 100%;
     display: flex;
@@ -161,6 +172,7 @@ h1 {
     flex-wrap: wrap;
     padding: 3%;
 }
+
 .personaje {
     width: 30%;
     display: flex;
@@ -168,8 +180,20 @@ h1 {
     justify-content: center;
     align-items: center;
     padding: 1%;
+    gap: 30px;
 }
-.button-more{
+
+.personaje h4 {
+    color: #3F4868;
+}
+
+.personaje p {
+    color: #B9B9C1;
+    font-style: normal;
+    text-align: center;
+}
+
+.button-more {
     margin: 0px auto;
 }
 
@@ -215,51 +239,87 @@ footer {
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
-.box-footer{
-    width: 22%;
-    height: 400px;
-    padding: 1%;
+
+.box-footer {
+    width: 25%;
+    height: 300px;
+    padding: 10px;
 }
-.box-footer.lista{
+.box-listas{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-grow: 2;
+}
+.lista {
+    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 10%;
 }
-.box-footer.box1{
+
+.box-footer.box1 {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
 }
-input[type=text]{
+
+input[type=text] {
     border-radius: 30px;
     height: 30px;
 }
-.logos {
-    display: flex;
-    flex-direction: column;
-}
 
+.lista-redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.lista-redes a{
+width: 15%;
+text-align: center;
+}
 .logoFooter {
     fill: #FFFFFF;
 }
-
-.box-footer.box2 {
-    display: flex;
-    align-items: center;
+.derechos{
+    align-self: flex-end;
     height: 50px;
     width: 100%;
-    justify-content: right;
+    color: #8C8C94;
+    font-style: normal;
+    text-align: center;
+}
+.derechos-mobile {
+    display: none;
+    height: 70px;
+    width: 100%;
+    color: #8C8C94;
+    font-style: normal;
+    text-align: center;
 }
 
+.box-footer.box1 button {
+    background-color: #8B48BF;
+    color: #FFFFFF;
+    border-radius: 50px;
+    padding: 10px 25px;
+    transition: all 1s ease;
+    cursor: pointer;
+}
+
+/*----------------------------------- medias query ------------------------------*/
 
 @media (max-width: 800px) {
     .menu-navegacion {
         display: none;
-        }
-    .boton-contacto{
+    }
+
+    .boton-contacto {
         display: none;
     }
 
@@ -267,12 +327,68 @@ input[type=text]{
         display: flex;
         flex-direction: column
     }
+
+
+    /*------------------------------------------------*/
+
+    .menu-info {
+        flex-direction: column;
+        align-items: flex-end;
+        padding: 30px 0;
+    }
+
+    .box-info {
+        width: 90%;
+        gap: 0;
+    }
+
+    .box-info-contenido .titulo {
+        background: rgba(139, 72, 191, 0.30);
+        padding: 5px 0;
+        padding-left: 30px;
+    }
+
+    /*----------------------------------------------------------------*/
+
+    .container-cards {
+        flex-direction: column;
+        padding: 3%;
+    }
+
+    .personaje {
+        width: 100%;
+        padding: 20px;
+    }
+    /*---------------------------- footer ---------------------------*/
+
+    .menu-footer{
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    .box-footer {
+        width: 100%;
+        height: 250px;
+        padding: 10px;
+    }
+    .box-footer.box1 {
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .lista-redes {
+        justify-content: space-around;
+        gap: 50px;
+    }
+    .derechos{
+        display: none;
+    }
 }
 
 @media (min-width: 1000px) {
     .hamburguesa {
         display: none;
     }
+
     .mobile {
         display: none;
     }
