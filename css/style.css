@@ -116,38 +116,37 @@ h1 {
 
 .menu-info {
     background-color: #fafafa;
-    padding: 3%;
+    padding: 2rem;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
-    gap: 40px;
+    gap: 2.5rem;
 }
 
 .box-info {
     width: 40%;
-    padding: 1%;
+    padding: 1rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: stretch;
-    gap: 25px;
+    align-items: baseline;
+    gap: 1.5rem;
 }
 
 .box-info-contenido.titulo {
     color: #323851;
     font-weight: bold;
-    height: 23px;
-    padding: 10px 25px 10px 25px;
+    padding: 0.6rem 1.5rem;
 }
 
 .numero {
     background-color: #8B48BF;
     color: #FFFFFF;
-    padding: 10px 25px 10px 25px;
-    border-radius: 20px;
+    padding: 0.6rem 1.5rem;
+    border-radius: 1.25rem;
 }
 
 .box-info-contenido p {
@@ -155,6 +154,7 @@ h1 {
     font-style: normal;
     text-align: justify;
 }
+
 /*------------------------------------------ Cards ------------------------------------*/
 .menu-cards {
     width: 100%;
@@ -162,7 +162,7 @@ h1 {
     flex-direction: column;
     flex-wrap: wrap;
     align-content: space-around;
-    padding: 3% 2%;
+    padding: 2rem 1.6rem;
 }
 
 .container-cards {
@@ -171,7 +171,7 @@ h1 {
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    padding: 3%;
+    padding: 2rem;
 }
 
 .personaje {
@@ -180,8 +180,18 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 1%;
-    gap: 30px;
+    padding: 1rem;
+    gap: 2rem;
+}
+
+.box-card-texto {
+    background-color: #fafafa;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2rem;
 }
 
 .personaje h4 {
@@ -195,21 +205,21 @@ h1 {
 }
 
 .button-more {
-    margin: 0px auto;
+    margin: 0 auto;
 }
 
 h3 {
-    font-size: 40px;
+    font-size: 2.5rem;
     color: #242e53;
     text-align: center;
 }
 
 .contenedor h4 {
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 .contenedor p {
-    font-size: 16px;
+    font-size: 1rem;
     width: 403px;
     height: 100px;
 }
@@ -222,7 +232,7 @@ h3 {
 .boton-info:hover {
     background-color: #9a82ac;
     color: #FFFFFF;
-    box-shadow: 0 4px 16px #4f4358;
+    box-shadow: 0 0.25rem 1rem #4f4358;
     transition: all 0.3s ease;
 }
 
@@ -232,6 +242,7 @@ footer {
     background-color: #1e1e26;
     color: #FFFFFF;
     width: 100%;
+    padding: 0 2rem;
 }
 
 .menu-footer {
@@ -243,34 +254,49 @@ footer {
 
 .box-footer {
     width: 25%;
-    height: 300px;
-    padding: 10px;
+    min-height: 18rem;
+    padding: 0.5rem;
 }
-.box-listas{
+
+.box-listas {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     flex-grow: 2;
 }
+
 .lista {
     width: 50%;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    gap: 10%;
+    align-items: flex-start;
+    align-content: center;
+    gap: 2rem;
+    padding: 1.25rem;
 }
 
 .box-footer.box1 {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
 }
 
+.box-footer.box {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    padding-right: 2rem;
+}
+
 input[type=text] {
-    border-radius: 30px;
-    height: 30px;
+    border-radius: 2rem;
+    height: 2.7rem;
 }
 
 .lista-redes {
@@ -280,38 +306,66 @@ input[type=text] {
     flex-wrap: wrap;
     width: 100%;
 }
-.lista-redes a{
-width: 10%;
-text-align: center;
+
+.lista-redes a {
+    width: 10%;
+    text-align: center;
 }
+
 .logoFooter {
     fill: #FFFFFF;
 }
-.derechos{
-    align-self: flex-end;
-    height: 50px;
+
+.box2 {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 0.5rem;
+}
+
+.derechos {
     width: 100%;
     color: #8C8C94;
     font-style: normal;
-    text-align: center;
+    text-align: right;
+    font-size: 0.75rem;
 }
+
 .derechos-mobile {
     display: none;
-    height: 70px;
     width: 100%;
+    padding-bottom: 4rem;
     color: #8C8C94;
     font-style: normal;
     text-align: center;
 }
 
-.box-footer.box1 button {
+.box-footer.box button {
     background-color: #8B48BF;
     color: #FFFFFF;
-    border-radius: 50px;
-    padding: 10px 25px;
+    border-radius: 3.1rem;
+    padding: 0.6rem 1.5rem;
     transition: all 1s ease;
     cursor: pointer;
 }
+
+.box-footer.box button:hover {
+    background-color: #9a82ac;
+    box-shadow: 0 0.25rem 1rem #4f4358;
+    transition: all 0.3s ease;
+}
+
+.box2 input {
+    min-width: 75%;
+}
+
+.box2 button.boton-go {
+    min-width: 20%;
+    text-align: center;
+    padding: 0 1rem;
+} 
 
 /*----------------------------------- medias query ------------------------------*/
 
@@ -335,7 +389,7 @@ text-align: center;
     .menu-info {
         flex-direction: column;
         align-items: flex-end;
-        padding: 30px 0;
+        padding: 2rem 0;
     }
 
     .box-info {
@@ -345,43 +399,65 @@ text-align: center;
 
     .box-info-contenido .titulo {
         background: rgba(139, 72, 191, 0.30);
-        padding: 5px 0;
-        padding-left: 30px;
+        padding: 0.6rem 0;
+        padding-left: 2rem;
+        box-shadow: -3.1rem 0 0 0 rgba(139, 72, 191, 0.30);
     }
 
     /*----------------------------------------------------------------*/
 
     .container-cards {
         flex-direction: column;
-        padding: 3%;
+        padding: 2rem;
     }
 
     .personaje {
         width: 100%;
-        padding: 20px;
+        padding: 1.25rem;
     }
+
     /*---------------------------- footer ---------------------------*/
 
-    .menu-footer{
+    .menu-footer {
         flex-direction: column-reverse;
         justify-content: center;
     }
+
     .box-footer {
         width: 100%;
-        height: 250px;
-        padding: 10px;
+        min-height: 10rem;
     }
+
     .box-footer.box1 {
         flex-direction: column-reverse;
         justify-content: space-evenly;
         align-items: center;
     }
+    .box-footer.box {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+       /* width: 100%;*/
+        padding-right: 0.5rem;
+    }
     .lista-redes {
         justify-content: space-around;
-        gap: 50px;
+        gap: 3rem;
     }
-    .derechos{
+
+    .box2 {
+        /*width: 100%;*/
+        justify-content: center;
+        gap: 0.5rem;
+    }
+
+    .derechos {
         display: none;
+    }
+
+    .derechos-mobile {
+        display: block;
     }
 }
 
