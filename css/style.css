@@ -12,26 +12,28 @@ body {
     flex-direction: column;
 }
 
-header {
+.menu-header {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: space-evenly;
     align-items: center;
-    height: 12vh;
-    padding: 0 12vw 0;
-    margin: 2vw 0 2vw;
-    background-color: cornflowerblue;
+    padding: 2rem 3rem;
 }
 
-.menu-navegacion {
-    /* overflow: hidden; */
-    /* Limpiamos errores de float*/
+.menu-navegacion ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem;
 }
 
-li {
+.menu-navegacion ul li {
+    flex-direction: row;
     list-style-type: none;
-    float: left;
-    text-align: center;
-    width: 5rem;
+}
+
+.menu-navegacion ul li a {
+    text-decoration: none;
 }
 
 button {
@@ -50,62 +52,84 @@ button:hover {
     transition: all 0.3s ease;
 }
 
-.hamburguesa {
-    width: 60px;
-    height: 45px;
+.menu-header i {
+    display: none;
 }
 
 .portada {
     display: flex;
+    flex-wrap: nowrap;
     height: auto;
     width: 100%;
-    padding: 0 12vw 0;
-    margin: 2vw 0 2vw;
-    background-color: deepskyblue;
-    justify-content: space-between;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 6rem;
+    gap: 1rem;
 }
 
-.portada img {
-    height: 60%;
+.portada .portada-izquierda {
+    width: 50%;
+    text-align: center;
+    padding: 1rem;
 }
 
-h1 {
+.portada-izquierda img {
     width: 100%;
-    font-size: 3rem;
-    color: #232C50;
-    padding: 0 2vw 0;
-    margin: 1vw 1vw 1vw;
+    height: 100%;
 }
 
-.portada p {
-    font-size: 1.25rem;
-    width: 40vw;
-    font-weight: bold;
-    padding: 0 2vw 0;
-    margin: 1vw 1vw 1vw;
-}
-
-.boton-contacto-portada {
-    margin: 1vw 3vw 1vw;
-}
-
-.portada-derecha {
+.portada .portada-derecha {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    align-content: space-around;
+    padding: 1rem;
+    gap: 3rem;
     text-align: right;
 }
 
+.portada-derecha h1 {
+    width: 85%;
+    font-size: 3rem;
+    color: #232C50;
+    padding: 1rem;
+}
+
+.portada-derecha p {
+    font-size: 1.25rem;
+    width: 100%;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+.boton-contacto-portada {
+    margin: 0;
+}
+
+/*--------------------------------------------- texto info 1 ---------------------------------------------------*/
+
 .texto-info {
-    height: 20vh;
     background-color: #8B48BF;
     color: #FFFFFF;
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    padding: 0 12vw 0;
+    padding: 1rem 3rem;
+}
+
+.texto-info p.mobile {
+    display: none;
 }
 
 .texto-info h2 {
     width: 45%;
-    font-size: 2.25rem;
+    text-align: left;
+    font-size: 2.5rem;
 }
 
 .texto-info p {
@@ -242,7 +266,7 @@ footer {
     background-color: #1e1e26;
     color: #FFFFFF;
     width: 100%;
-    padding: 0 2rem;
+    padding: 4rem 2rem;
 }
 
 .menu-footer {
@@ -254,7 +278,6 @@ footer {
 
 .box-footer {
     width: 25%;
-    min-height: 18rem;
     padding: 0.5rem;
 }
 
@@ -336,7 +359,6 @@ input[type=text] {
 .derechos-mobile {
     display: none;
     width: 100%;
-    padding-bottom: 4rem;
     color: #8C8C94;
     font-style: normal;
     text-align: center;
@@ -370,9 +392,9 @@ input[type=text] {
 /* ------------------------------------- formulario  -------------------------------------*/
 .form {
     background-color: white;
-    width: 400px;
+    width: 600px;
     border-radius: 8px;
-    padding: 20px 40px;
+    padding: 5rem 10rem;
     box-shadow: 0 10px 25px rgba(92, 99, 105, .2);
 }
 
@@ -454,22 +476,69 @@ input[type=text] {
     border: 2px solid purple;
 }
 
+/*----------------------------------------------------------------------------------*/
 /*----------------------------------- medias query ------------------------------*/
+/*---------------------------------------------------------------------------------*/
 
-@media (max-width: 480px) {
+@media (max-width: 800px) {
     .menu-navegacion {
         display: none;
+    }
+
+    .menu-header {
+        justify-content: space-between;
+        align-items: center;
     }
 
     .boton-contacto {
         display: none;
     }
 
-    .portada {
-        display: flex;
-        flex-direction: column
+    .menu-header i {
+        display: block;
     }
 
+    .portada {
+        display: flex;
+        flex-direction: column;
+        padding: 3rem 1rem;
+    }
+
+    .portada .portada-izquierda {
+        width: 100%;
+    }
+
+    .portada .portada-derecha {
+        width: 100%;
+    }
+
+    .portada .portada-derecha h1 {
+        width: 100%;
+    }
+
+    .texto-info {
+        background: #3CDDF3;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2rem;
+        padding: 4rem 4rem 4rem 2rem;
+    }
+
+    .texto-info h2 {
+        width: 100%;
+    }
+
+    .texto-info p {
+        width: 100%;
+    }
+
+    .texto-info p.mobile {
+        display: block;
+    }
+
+    .texto-info p.desktop {
+        display: none;
+    }
 
     /*------------------------------------------------*/
 
@@ -503,22 +572,52 @@ input[type=text] {
         padding: 1.25rem;
     }
 
+    .personaje.p1 {
+        display: none;
+    }
+
+    .personaje.p3 {
+        display: none;
+    }
+
+    /*-----------------------------------------------------------------*/
+
+    .texto-info.t2 {
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 2rem;
+        padding: 2rem;
+    }
+
+    .texto-info.t2 h4 {
+        width: 100%;
+        text-align: center;
+        font-size: 2.5rem;
+    }
+
+    .texto-info.t2 button.boton-info {
+        background-color: #232C50;
+        color: #FFFFFF;
+    }
+
     /*---------------------------- footer ---------------------------*/
 
     .menu-footer {
         flex-direction: column-reverse;
         justify-content: center;
+        gap: 2rem;
     }
 
     .box-footer {
         width: 100%;
-        min-height: 10rem;
     }
 
     .box-footer.box1 {
         flex-direction: column-reverse;
         justify-content: space-evenly;
         align-items: center;
+        gap: 2rem;
     }
 
     .box-footer.box {
@@ -549,31 +648,3 @@ input[type=text] {
         display: block;
     }
 }
-
-@media (min-width: 1000px) {
-    .hamburguesa {
-        display: none;
-    }
-
-    .mobile {
-        display: none;
-    }
-}
-
-
-/* @media (max-width: 1440px) {
-    
-
-    .menu-navegacion {
-        display: none;
-    }
-    .boton-contacto {
-        display: none;
-    }
-}
-
-@media (min-width: 1440px) {
-    .hamburguesa {
-        display: none;
-    }
-} */

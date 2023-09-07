@@ -10,28 +10,30 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/185bea4407.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <header>
+    <header class="menu-header">
         <img src="img/logo.svg" alt="Logo">
         <nav class="menu-navegacion">
             <ul>
-                <li>Sports</li>
-                <li>Products</li>
-                <li>About Us</li>
-                <li>Trainning</li>
-                <li>Community</li>
+                <li><a href="#">Sports</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Trainning</a></li>
+                <li><a href="#">Community</a></li>
             </ul>
         </nav>
         <button class="boton-contacto">Contact</button>
-        <img class="hamburguesa" src="img/icon-hamburger.svg" alt="Menú">
-
+        <i class="fa-solid fa-bars fa-beat fa-2xl" style="color: #000000;"></i>
     </header>
 
     <main>
         <section class="portada">
-            <article><img src="img/padel-intro.png" alt="Imagen de inicio"></article>
+            <article class="portada-izquierda">
+                <img src="img/padel-intro.png" alt="Imagen de inicio">
+            </article>
             <article class="portada-derecha">
                 <h1>LIVE: Follow the Telcel Huawei Mexico Open 2022 for free</h1>
                 <p>The final Open of the 2022 World Padel Tour season is underway, don't miss out on any of the action!
@@ -86,7 +88,7 @@
         <section class="menu-cards">
             <h3>Best of the month</h3>
             <div class="container-cards">
-                <article class="personaje">
+                <article class="personaje p1">
                     <img src="img/avatar-sanyo.png" alt="Foto Sanyo">
                     <div class="box-card-texto">
                         <h4>Sanyo</h4>
@@ -97,7 +99,7 @@
                         </p>
                     </div>
                 </article>
-                <article class="personaje">
+                <article class="personaje p2">
                     <img src="img/avatar.lebron.png" alt="Foto Lebron">
                     <div class="box-card-texto">
                         <h4>Lebron</h4>
@@ -108,7 +110,7 @@
                         </p>
                     </div>
                 </article>
-                <article class="personaje">
+                <article class="personaje p3">
                     <img src="img/avatar-navarro.png" alt="Foto Navarro">
                     <div class="box-card-texto">
                         <h4>Navarro</h4>
@@ -125,7 +127,7 @@
             </div>
         </section>
 
-        <section class="texto-info">
+        <section class="texto-info t2">
             <h4>Get to know the best teams of the year</h4>
             <button class="boton-info">Go for it</button>
         </section>
