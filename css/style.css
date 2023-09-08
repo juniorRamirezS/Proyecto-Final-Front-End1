@@ -4,7 +4,6 @@
     box-sizing: border-box;
     font-family: 'Be Vietnam Pro', sans-serif;
     font-size: 16px;
-    /*max-width: 100%;*/
 }
 
 body {
@@ -15,16 +14,16 @@ body {
 .menu-header {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    padding: 2rem 3rem;
+    padding: 2rem 7rem;
 }
 
 .menu-navegacion ul {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 .menu-navegacion ul li {
@@ -34,21 +33,30 @@ body {
 
 .menu-navegacion ul li a {
     text-decoration: none;
+    font-weight: bold;
+    color: #242E52;
 }
 
+.menu-navegacion ul li a:hover {
+    color: #242E5299;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+a button{
+    text-decoration: none;
+}
 button {
     background-color: #8B48BF;
     color: #FFFFFF;
-    padding: 20px 50px 20px 50px;
-    border-radius: 30px;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
     transition: all 1s ease;
     cursor: pointer;
-    /* DUDA */
 }
 
 button:hover {
     background-color: #9a82ac;
-    box-shadow: 0 4px 16px #4f4358;
+    box-shadow: 0 0.25rem 1rem #4f4358;
     transition: all 0.3s ease;
 }
 
@@ -179,6 +187,7 @@ button:hover {
     text-align: justify;
 }
 
+
 /*------------------------------------------ Cards ------------------------------------*/
 .menu-cards {
     width: 100%;
@@ -238,14 +247,17 @@ h3 {
     text-align: center;
 }
 
-.contenedor h4 {
-    font-size: 1rem;
+/*----------------------------------------- text info 2 -----------------------------------------*/
+.texto-info.t2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 2rem 10rem;
 }
-
-.contenedor p {
-    font-size: 1rem;
-    width: 403px;
-    height: 100px;
+.texto-info.t2 h4 {
+    width: 40%;
+    font-size: 2rem;
 }
 
 .boton-info {
@@ -299,7 +311,15 @@ footer {
     gap: 2rem;
     padding: 1.25rem;
 }
-
+.lista a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.lista a:hover {
+    color: #8B48BF;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
 .box-footer.box1 {
     display: flex;
     flex-wrap: wrap;
@@ -314,14 +334,16 @@ footer {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: flex-end;
-    padding-right: 2rem;
+    padding-right: 1rem;
 }
 
-input[type=text] {
+.box2 input[type=text] {
     border-radius: 2rem;
     height: 2.7rem;
 }
-
+.box2 input[type=text]::placeholder{
+    padding-left: 1rem;
+}
 .lista-redes {
     display: flex;
     flex-direction: row;
@@ -345,6 +367,7 @@ input[type=text] {
     flex-wrap: nowrap;
     flex-direction: row;
     justify-content: flex-end;
+    align-items: baseline;
     gap: 0.5rem;
 }
 
@@ -384,96 +407,8 @@ input[type=text] {
 }
 
 .box2 button.boton-go {
-    min-width: 20%;
     text-align: center;
-    padding: 0 1rem;
-}
-
-/* ------------------------------------- formulario  -------------------------------------*/
-.form {
-    background-color: white;
-    width: 600px;
-    border-radius: 8px;
-    padding: 5rem 10rem;
-    box-shadow: 0 10px 25px rgba(92, 99, 105, .2);
-}
-
-.container-form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 100vh;
-    padding: 5rem 10rem;
-}
-
-.input-container {
-    position: relative;
-    height: 45px;
-    width: 90%;
-    margin-bottom: 17px;
-}
-
-.input-container input {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    height: 100%;
-    width: 100%;
-    border: 1px solid #DADCE0;
-    border-radius: 7px;
-    font-size: 16px;
-    padding: 0 20px;
-    outline: none;
-    background: none;
-    z-index: 1;
-}
-
-.input-container ::placeholder {
-    color: transparent;
-}
-
-.input-container label {
-    position: absolute;
-    top: 15px;
-    left: 15px;
-    padding: 0 4px;
-    background-color: white;
-    color: #DADCE0;
-    font-size: 16px;
-    transition: 0.5s;
-    z-index: 0;
-}
-
-.container-form input[type=submit] {
-    display: block;
-    margin-left: auto;
-    padding: 15px 30px;
-    border: none;
-    background-color: purple;
-    color: white;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 16px;
-    margin-top: 30px;
-}
-
-.container-form input[type=submit]:hover {
-    background-color: #9867C5;
-    transform: translateY(-2px);
-}
-
-.input-container input:focus+label {
-    top: -7px;
-    left: 3px;
-    z-index: 10;
-    font-size: 14px;
-    font-weight: 600;
-    color: purple;
-}
-
-.input-container input:focus {
-    border: 2px solid purple;
+    padding: 0.7rem 1.5rem;
 }
 
 /*----------------------------------------------------------------------------------*/
@@ -488,6 +423,7 @@ input[type=text] {
     .menu-header {
         justify-content: space-between;
         align-items: center;
+        padding: 2rem 3rem;
     }
 
     .boton-contacto {
@@ -625,7 +561,6 @@ input[type=text] {
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        /* width: 100%;*/
         padding-right: 0.5rem;
     }
 
@@ -635,7 +570,6 @@ input[type=text] {
     }
 
     .box2 {
-        /*width: 100%;*/
         justify-content: center;
         gap: 0.5rem;
     }

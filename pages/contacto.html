@@ -4,28 +4,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>boton-contacto</title>
+    <title>Formulario de Contacto</title>
     <link rel="shortcut icon" href="/img/favicon-sn-fondo.png" type="image/x-icon">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style_form.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/185bea4407.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <header>
-        <img src="/img/logo.svg" alt="Logo">
+    <header class="menu-header">
+        <a href="../index.html"><img src="../img/logo.svg" alt="Logo"></a>
         <nav class="menu-navegacion">
             <ul>
-                <li>Sports</li>
-                <li>Products</li>
-                <li>About Us</li>
-                <li>Trainning</li>
-                <li>Community</li>
+                <li><a href="#">Sports</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Trainning</a></li>
+                <li><a href="#">Community</a></li>
             </ul>
         </nav>
-        <button class="boton-contacto">Contact</button>
-        <img class="hamburguesa" src="/img/icon-hamburger.svg" alt="Menú">
+        <a href="contacto.html"><button class="boton-contacto">Contact</button></a>
+        <i class="fa-solid fa-bars fa-beat fa-2xl" style="color: #000000;"></i>
     </header>
 
     <main>
@@ -36,28 +38,30 @@
                 <h2>Formulario de Contacto</h2>
                 <br>
                 <div class="input-container">
-                    <input type="text" id="nombre" placeholder="Nombre">
+                    <input type="text" id="nombre" placeholder="Nombre" required>
                     <label for="nombre">Nombre</label>
                 </div>
                 <br>
                 <div class="input-container">
-                    <input type="text" id="apellido" placeholder="Apellido">
+                    <input type="text" id="apellido" placeholder="Apellido" required>
                     <label for="apellido">Apellido</label>
                 </div>
                 <br>
                 <div class="input-container">
-                    <input type="email" id="correo" placeholder="name@example.com">
+                    <input type="email" id="correo" placeholder="name@example.com" required>
                     <label for="correo">Email</label>
                 </div class="input-container">
                 <br>
                 <div class="input-container">
-                    <input type="text" id="asunto" placeholder="Asunto">
+                    <input type="text" id="asunto" placeholder="Asunto" required>
                     <label for="asunto">Asunto</label>
                 </div>
                 <br>
-                <div>
-                    <label for="descripcion"></label>
-                    <textarea name="descripcion" id="descripcion" cols="30" rows="10"></textarea>
+                <div class="input-container-textarea">
+                    <label for="descripcion">Comentario:</label>
+                    <br>
+                    <br>
+                    <textarea name="descripcion" id="descripcion" cols="30" rows="10" required></textarea>
                 </div>
                 <input type="submit" value="Enviar">
             </fieldset>
@@ -71,27 +75,27 @@
             </div>
             <div class="box-footer box1">
                 <div>
-                    <img src="/img/logo-footer.svg" alt="Logo">
+                    <a href="../index.html"><img src="../img/logo-footer.svg" alt="Logo"></a>
                 </div>
                 <div class="lista-redes">
-                    <a href=""><img src="/img/icon-facebook.svg" alt="Ícono de Facebook"></a>
-                    <a href=""><img src="/img/icon-youtube.svg" alt="Ícono de Youtube"></a>
-                    <a href=""><img src="/img/icon-twitter.svg" alt="Ícono de Twitter"></a>
-                    <a href=""><img src="/img/icon-pinterest.svg" alt="Ícono de Pinterest"></a>
-                    <a href=""><img src="/img/icon-instagram.svg" alt="Ícono de Instagram"></a>
+                    <a href="https://es-la.facebook.com"><img src="../img/icon-facebook.svg" alt="Ícono de Facebook"></a>
+                    <a href="https://www.youtube.com"><img src="../img/icon-youtube.svg" alt="Ícono de Youtube"></a>
+                    <a href="https://twitter.com"><img src="../img/icon-twitter.svg" alt="Ícono de Twitter"></a>
+                    <a href="https://www.pinterest.es"><img src="../img/icon-pinterest.svg" alt="Ícono de Pinterest"></a>
+                    <a href="https://www.instagram.com"><img src="../img/icon-instagram.svg" alt="Ícono de Instagram"></a>
                 </div>
             </div>
             <div class="box-listas">
                 <div class="lista">
-                    <p>Home</p>
-                    <p>Pricing</p>
-                    <p>Products</p>
-                    <p>About Us</p>
+                    <a href="#">Home</a>
+                    <a href="#">Pricing</a>
+                    <a href="#">Products</a>
+                    <a href="#">About Us</a>
                 </div>
                 <div class="lista">
-                    <p>Trainning</p>
-                    <p>Community</p>
-                    <p>Privacy Policy</p>
+                    <a href="#">Trainning</a>
+                    <a href="#">Community</a>
+                    <a href="#">Privacy Policy</a>
                 </div>
             </div>
             <div class="box-footer box">
