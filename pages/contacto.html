@@ -50,7 +50,21 @@
                 <div class="input-container">
                     <input type="email" id="correo" placeholder="name@example.com" required>
                     <label for="correo">Email</label>
-                </div class="input-container">
+                </div>
+                <br>
+                <div class="input-container">
+                    <input type="tel" id="telefono" placeholder="123-45678" pattern="[0-9]{3}-[0-9]{5}" required>
+                    <label for="telefono">Teléfono</label>
+                </div>
+                <br>
+                <div>
+                    <label for="">Tipo de Documento:</label>
+                    <br>
+                    <label for="documento1"><input type="radio" name="documento" id="documento1" value="DNI"> DNI</label>
+                    <label for="documento2"><input type="radio" name="documento" id="documento2" value="Pasaporte"> Pasaporte</label>
+                    <label for="documento3"><input type="radio" name="documento" id="documento3" value="CURP"> CURP</label>
+                    <label for="documento4"><input type="radio" name="documento" id="documento4" value="IMSS"> IMSS</label>
+                </div>
                 <br>
                 <div class="input-container">
                     <input type="text" id="asunto" placeholder="Asunto" required>
@@ -62,6 +76,11 @@
                     <br>
                     <br>
                     <textarea name="descripcion" id="descripcion" cols="30" rows="10" required></textarea>
+                </div>
+                <br>
+                <div>
+                    <input type="checkbox" name="terminos" id="terminos" required>
+                    <label for="terminos">Aceptó los términos y condiciones.</label>
                 </div>
                 <input type="submit" value="Enviar">
             </fieldset>
