@@ -339,7 +339,7 @@ footer {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: inherit;
     align-items: center;
 }
 
@@ -365,11 +365,19 @@ footer {
     justify-content: space-evenly;
     flex-wrap: wrap;
     width: 100%;
+    padding: 1rem;
 }
 
 .lista-redes a {
     width: 10%;
     text-align: center;
+}
+
+.lista-redes a:hover {
+    width: 30%;
+    text-align: center;
+    transition: all 2s ease;
+
 }
 
 .logoFooter {
@@ -429,6 +437,12 @@ footer {
 .enfoque:focus {
     background-color: mistyrose;
     color: #8B48BF;
+}
+
+.derechos::after {
+    content: "Colaboramos Junior y Montserrat";
+    padding: 3rem 0rem;
+    color: blanchedalmond;
 }
 
 /*----------------------------------------------------------------------------------*/
