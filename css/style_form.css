@@ -70,6 +70,15 @@ legend {
 .input-container ::placeholder {
     color: transparent;
 }
+.input-container::after{
+    position: absolute;
+    content: "campo obligatorio *";
+    color: red;
+    font-size: 0.7rem;
+    padding: 1rem;
+    right: 0.5rem;
+    bottom: 1.6rem;
+}
 
 .input-container label {
     position: absolute;
@@ -77,7 +86,7 @@ legend {
     left: 1rem;
     padding: 0 0.25rem;
     background-color: white;
-    color: #8B48BF;
+    color: #DADCE0;
     font-size: 1rem;
     transition: 0.5s;
     z-index: 0;
@@ -88,7 +97,15 @@ legend {
     width: 90%;
     margin: 0 auto;
 }
-
+.input-container-textarea::after{
+    position: absolute;
+    content: "campo obligatorio *";
+    color: red;
+    font-size: 0.7rem;
+    padding: 1rem;
+    right: 0.5rem;
+    bottom: 12.5rem;
+}
 .input-container-textarea label {
     background-color: white;
     color: #8B48BF;
@@ -140,9 +157,175 @@ legend {
     border: 0.125rem solid #8B48BF;
 }
 
-.genero-sexo{
-    display: block;
+.container-select {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
 }
+
+.container-select label {
+    background-color: white;
+    color: #8B48BF;
+    padding: 0 1rem;
+}
+
+.container-select select {
+    color: #DADCE0;
+    background-color: #27a4ad;
+    padding: 0.4rem;
+    border-radius: 0.5rem;
+    border: 0.1rem solid #8B48BF;
+    cursor: pointer;
+}
+.container-select select:hover {
+    color: #DADCE0;
+    background-color: #8B48BF;
+}
+.container-select select:focus {
+    color: #DADCE0;
+    background-color: #8B48BF;
+}
+
+.container-radio {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.container-radio label {
+    background-color: white;
+    color: #8B48BF;
+    padding: 0 1rem;
+    cursor: pointer;
+}
+.container-radio input[type=radio] {
+    width: 1.2rem;
+    height: 1.2rem;
+    accent-color: #8B48BF;
+    cursor: pointer;
+}
+
+.container-radio .genero-sexo {
+    background-color: white;
+    color: #8B48BF;
+    padding: 0.5rem 4rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.3rem    ;
+    cursor: pointer;
+}
+.container-radio .genero-sexo:hover{
+    color: #27a4ad;
+    font-weight: bold;
+}
+.container-radio input[type=radio]:checked+.genero-sexo{
+    color: #27a4ad;
+    /*font-weight: bold;*/
+}
+.container-fecha {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.container-fecha label {
+    background-color: white;
+    color: #8B48BF;
+    padding: 0 1rem;
+}
+
+.container-fecha input[type=date]{
+    border-radius: 0.5rem;
+    color: #DADCE0;
+    background-color: #27a4ad;
+    padding: 0.4rem;
+    border: 0.1rem solid #8B48BF;
+    cursor: pointer;
+}
+.container-fecha input[type=date]:hover {
+    color: #DADCE0;
+    background-color: #8B48BF;
+}
+
+.container-file {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.container-file label {
+    background-color: white;
+    color: #8B48BF;
+    padding: 0 1rem;
+}
+
+.container-file input {
+    align-self: flex-end;
+    color: #8B48BF;
+
+}
+
+.container-file input[type=file]::file-selector-button {
+    background-color: #8B48BF;
+    color: #DADCE0;
+    padding: 0.5rem;
+    border-radius: 0.7rem;
+    border: 0.16rem solid #6c5ce7;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.container-file input[type=file]::file-selector-button:hover {
+    background-color: #DADCE0;
+    color: #8B48BF;
+    border: 0.16rem solid #6c5ce7;
+}
+
+.container-checkbox {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    padding: 0 1rem;
+}
+
+.container-checkbox label {
+    background-color: white;
+    color: #8B48BF;
+    cursor: pointer;
+}
+
+.container-checkbox input[type=checkbox] {
+    width: 1.2rem;
+    height: 1.2rem;
+    text-align: center;
+    cursor: pointer;
+    accent-color: #8B48BF;
+}
+.container-checkbox input[type=checkbox]:hover+label {
+    font-weight: bold;
+    color: #27a4ad;
+}
+.container-checkbox input[type="checkbox"]:checked {
+    border-radius: 1.5rem;
+    box-shadow: 0 0 0 0.2rem #27a4ad;
+}
+
+.container-checkbox input[type=checkbox]:checked+label {
+    color: red;
+    font-weight: bold;
+}
+
 /*----------------------------------------------------------------------------------*/
 /*----------------------------------- medias query ------------------------------*/
 /*---------------------------------------------------------------------------------*/

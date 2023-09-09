@@ -32,7 +32,7 @@
 
     <main>
         <form action="contacto.html" class="container-form">
-            <fieldset>
+            <fieldset class="container-fieldset">
                 <legend>Complete la información</legend>
                 <br>
                 <h2>Formulario de Contacto</h2>
@@ -57,9 +57,9 @@
                     <label for="telefono">Teléfono</label>
                 </div>
                 <br>
-                <div>
+                <div class="container-select">
                     <label for="documento">Tipo de Documento:</label>
-                    <select name="documento" id="documento">
+                    <select name="documento" id="documento" required>
                         <option selected>Seleccione un documento</option>
                         <option value="DNI">DNI</option>
                         <option value="PASAPORTE">PASAPORTE</option>
@@ -68,20 +68,19 @@
                     </select>
                 </div>
                 <br>
-                <div>
-                    <label for="">Sexo:</label>
-                    <br>
+                <div class="container-radio">
+                    <label for="sexo">Sexo:</label>
                     <label for="sexo1" class="genero-sexo"><input type="radio" name="sexo" id="sexo1"
                             value="Masculino"> Masculino</label>
                     <label for="sexo2" class="genero-sexo"><input type="radio" name="sexo" id="sexo2"
                             value="Femenino"> Femenino</label>
                     <label for="sexo3" class="genero-sexo"><input type="radio" name="sexo" id="sexo3"
-                            value="Otros"> Otros</label>
+                            value="Otro"> Otro</label>
                 </div>
                 <br>
-                <div>
+                <div class="container-fecha">
                     <label for="nacimiento">Fecha de Nacimiento</label>
-                    <input type="date" id="nacimiento" name="nacimiento" min="1970-01-01">
+                    <input type="date" id="nacimiento" name="nacimiento" min="1970-01-01" required>
                 </div>
                 <br>
                 <div class="input-container">
@@ -90,18 +89,18 @@
                 </div>
                 <br>
                 <div class="input-container-textarea">
-                    <label for="descripcion">Comentario:</label>
+                    <label for="descrip">Comentario:</label>
                     <br>
                     <br>
                     <textarea name="descripcion" id="descripcion" cols="30" rows="10" required></textarea>
                 </div>
                 <br>
-                <div>
-                    <label for="imagen-file">Subir archivo: </label>
+                <div class="container-file">
+                    <label for="imagen">Subir archivo: </label>
                     <input type="file" id="imagen-file" accept=".png , .jpg , .pdf" name="imagen-file" multiple>
                 </div>
                 <br>
-                <div>
+                <div class="container-checkbox">
                     <input type="checkbox" name="terminos" id="terminos" required>
                     <label for="terminos">*Aceptó los términos y condiciones.</label>
                 </div>
@@ -142,7 +141,7 @@
             </section>
             <section class="box-footer box">
                 <article class="box2">
-                    <input type="text" placeholder="Update in your inbox..." name="" id="">
+                    <input class="enfoque" type="text" placeholder="Update in your inbox..." name="" id="">
                     <button class="boton-go">Go</button>
                 </article>
                 <!-- <p class="derechos">Copyright 2020. All Rights Reserved</p> -->
