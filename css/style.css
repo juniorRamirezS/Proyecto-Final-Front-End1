@@ -310,7 +310,7 @@ footer {
 
 .box-listas {
     display: flex;
-    /* flex-direction: row; */
+    flex-direction: row;
     flex-wrap: wrap;
     flex-grow: 2;
 }
@@ -585,6 +585,7 @@ footer {
     }
 
     .titulo-mobile {
+        display: block;
         font-size: 2rem;
     }
     /*---------------------------- footer ---------------------------*/
@@ -606,7 +607,7 @@ footer {
         flex-direction: column-reverse;
         justify-content: space-evenly;
         align-items: center;
-        gap: 2rem;
+        gap: 3rem;
     }
 
     .box-footer.box {
