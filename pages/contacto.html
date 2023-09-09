@@ -58,12 +58,17 @@
                 </div>
                 <br>
                 <div>
-                    <label for="">Tipo de Documento:</label>
+                    <label for="" tipo-doc>Tipo de Documento:</label>
                     <br>
-                    <label for="documento1"><input type="radio" name="documento" id="documento1" value="DNI"> DNI</label>
-                    <label for="documento2"><input type="radio" name="documento" id="documento2" value="Pasaporte"> Pasaporte</label>
-                    <label for="documento3"><input type="radio" name="documento" id="documento3" value="CURP"> CURP</label>
-                    <label for="documento4"><input type="radio" name="documento" id="documento4" value="IMSS"> IMSS</label>
+                    <br>
+                    <label for="documento1" class="tipo-doc"><input type="radio" name="documento" id="documento1"
+                            value="DNI"> DNI</label>
+                    <label for="documento2" class="tipo-doc"><input type="radio" name="documento" id="documento2"
+                            value="Pasaporte"> Pasaporte</label>
+                    <label for="documento3" class="tipo-doc"><input type="radio" name="documento" id="documento3"
+                            value="CURP"> CURP</label>
+                    <label for="documento4" class="tipo-doc"><input type="radio" name="documento" id="documento4"
+                            value="IMSS"> IMSS</label>
                 </div>
                 <br>
                 <div class="input-container">
@@ -71,11 +76,20 @@
                     <label for="asunto">Asunto</label>
                 </div>
                 <br>
+                <div>
+                    <label for="nacimiento">Fecha de Nacimiento</label>
+                    <input type="date" id="nacimiento" name="nacimiento" min="1970-01-01">
+                </div>
                 <div class="input-container-textarea">
                     <label for="descripcion">Comentario:</label>
                     <br>
                     <br>
                     <textarea name="descripcion" id="descripcion" cols="30" rows="10" required></textarea>
+                </div>
+                <br>
+                <div>
+                    <label for="doc">Imagen Documento</label>
+                    <input type="file" id="doc" accept=".png , .jpg , .pdf" name="doc" multiple>
                 </div>
                 <br>
                 <div>
