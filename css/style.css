@@ -45,7 +45,7 @@ body {
 
 .menu-navegacion ul li a:visited {
     background-color: yellow;
-    color: #3CDDF3;
+    /*color: #3CDDF3;*/
 }
 
 a button{
