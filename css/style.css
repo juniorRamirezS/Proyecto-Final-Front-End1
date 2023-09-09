@@ -89,9 +89,9 @@ button:hover {
     padding: 1rem;
 }
 @keyframes animacion {
-    0% { opacity: 70% }
-    25% { transform: translateY(-10%); opacity: 100% }
-    100% { opacity: 70%;}
+    0% { opacity: 100% }
+    25% { transform: translateY(-10%); opacity: 70% }
+    100% { opacity: 100%;}
 }
 
 .animacion {
