@@ -42,13 +42,12 @@ body {
     transition: all 0.5s ease;
     cursor: pointer;
 }
-
-.menu-navegacion ul li a:visited {
-    background-color: yellow;
-    /*color: #3CDDF3;*/
+.menu-navegacion ul li:hover {
+    transform: scale(1.2);
+    transition: all 1s ease;
 }
 
-a button{
+a button {
     text-decoration: none;
 }
 
@@ -71,6 +70,12 @@ button:hover {
     display: none;
 }
 
+.menu-header a img:hover {
+    transform: scale(2);
+    text-align: center;
+    transition: all 2s ease;
+}
+
 .portada {
     display: flex;
     flex-wrap: nowrap;
@@ -88,15 +93,26 @@ button:hover {
     text-align: center;
     padding: 1rem;
 }
+
 @keyframes animacion {
-    0% { opacity: 100% }
-    25% { transform: translateY(-10%); opacity: 70% }
-    100% { opacity: 100%;}
+    0% {
+        opacity: 100%
+    }
+
+    25% {
+        transform: translateY(-10%);
+        opacity: 70%
+    }
+
+    100% {
+        opacity: 100%;
+    }
 }
 
 .animacion {
     animation: animacion 3s infinite;
 }
+
 .portada-izquierda img {
     width: 100%;
     height: 100%;
@@ -228,7 +244,6 @@ button:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* padding: 1rem; */
     gap: 2rem;
 }
 
@@ -253,7 +268,6 @@ button:hover {
 }
 
 .boton-more {
-    /* margin: 0 auto; */
     width: 100%;
     display: flex;
     justify-content: center;
@@ -272,16 +286,17 @@ h3 {
 
 /*----------------------------------------- text info 2 -----------------------------------------*/
 .titulo-mobile {
-    display:none;
+    display: none;
 }
 
-.texto-info.t2{
+.texto-info.t2 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
     padding: 2rem 12rem;
 }
+
 .texto-info.t2 h4 {
     width: 35%;
     font-size: 2rem;
@@ -339,15 +354,18 @@ footer {
     gap: 2rem;
     padding: 1.25rem;
 }
-.lista a{
+
+.lista a {
     text-decoration: none;
     color: #FFFFFF;
 }
+
 .lista a:hover {
     color: #8B48BF;
     transition: all 0.5s ease;
     cursor: pointer;
 }
+
 .box-footer.box1 {
     display: flex;
     flex-wrap: wrap;
@@ -356,25 +374,23 @@ footer {
     align-items: center;
 }
 
-/* .box-footer.box {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: flex-end;
-    padding-right: 1rem;
-} */
-
 .box2 input[type=text] {
     border-radius: 2rem;
     height: 2.7rem;
 }
-.box2 input[type=text]::placeholder{
+
+.box2 input[type=text]::placeholder {
     padding-left: 1rem;
 }
+
+.box-footer a img:hover {
+    transform: scale(2);
+    transition: all 2s ease;
+}
+
 .lista-redes {
     display: flex;
-    /* flex-direction: row; */
+    flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
     width: 100%;
@@ -415,14 +431,6 @@ footer {
     font-size: 0.75rem;
 }
 
-/* .derechos-mobile {
-    display: none;
-    width: 100%;
-    color: #8C8C94;
-    font-style: normal;
-    text-align: center;
-} */
-
 .box-footer.box button {
     background-color: #8B48BF;
     color: #FFFFFF;
@@ -453,7 +461,7 @@ footer {
 }
 
 .derechos::after {
-    content: "Colaboramos Junior y Montserrat";
+    content: "Diseñado por Junior y Montserrat";
     padding: 3rem 0rem;
     color: blanchedalmond;
 }
@@ -499,6 +507,7 @@ footer {
         width: 100%;
         font-size: 2.8rem;
     }
+
     .portada .portada-derecha p {
         width: 100%;
         font-size: 1rem;
@@ -530,7 +539,7 @@ footer {
         display: none;
     }
 
-    /*------------------------------------------------*/
+    /*---------------------------------- texto info 1----------------------------------*/
 
     .menu-info {
         flex-direction: column;
@@ -556,7 +565,7 @@ footer {
         line-height: 1.5rem;
     }
 
-    /*----------------------------------------------------------------*/
+    /*----------------------------- menu cards -----------------------------------*/
 
     .menu-cards {
         padding: 2rem 1.6rem;
@@ -589,7 +598,7 @@ footer {
         display: none;
     }
 
-    /*-----------------------------------------------------------------*/
+    /*------------------------------- texto info 2 ----------------------------------*/
 
     .texto-info.t2 {
         flex-direction: column;
@@ -612,7 +621,7 @@ footer {
 
     /*---------------------------------------------------------------*/
 
-    .titulo-escritorio{
+    .titulo-escritorio {
         display: none;
     }
 
@@ -620,11 +629,13 @@ footer {
         display: block;
         font-size: 2rem;
     }
+
     /*---------------------------- footer ---------------------------*/
 
     footer {
         padding: 3rem 1rem;
     }
+
     .menu-footer {
         flex-direction: column-reverse;
         justify-content: center;
@@ -665,9 +676,12 @@ footer {
         align-items: center;
         justify-content: center;
         padding: 2rem;
+        position: relative;
     }
-
-    /*.derechos-mobile {
-        display: block;
-    } */
+    .derechos::after {
+        position: absolute;
+        content: "Diseñado por Junior y Montserrat";
+        top: 1.5rem;
+        color: blanchedalmond;
+    }
 }
