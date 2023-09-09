@@ -43,6 +43,11 @@ body {
     cursor: pointer;
 }
 
+.menu-navegacion ul li a:visited {
+    background-color: yellow;
+    color: #3CDDF3;
+}
+
 a button{
     text-decoration: none;
 }
