@@ -42,6 +42,7 @@ body {
     transition: all 0.5s ease;
     cursor: pointer;
 }
+
 .menu-navegacion ul li:hover {
     transform: scale(1.2);
     transition: all 1s ease;
@@ -550,6 +551,7 @@ footer {
     .box-info {
         width: 90%;
         gap: 0;
+        padding: 1rem 0 1rem 1rem;
     }
 
     .box-info-contenido .titulo {
@@ -678,6 +680,7 @@ footer {
         padding: 2rem;
         position: relative;
     }
+
     .derechos::after {
         position: absolute;
         content: "Diseñado por Junior y Montserrat";
