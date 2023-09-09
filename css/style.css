@@ -38,13 +38,15 @@ body {
 }
 
 .menu-navegacion ul li a:hover {
-    color: #242E5299;
+    color: #242E5260;
     transition: all 0.5s ease;
     cursor: pointer;
 }
+
 a button{
     text-decoration: none;
 }
+
 button {
     background-color: #8B48BF;
     color: #FFFFFF;
@@ -110,7 +112,7 @@ button:hover {
 .portada-derecha p {
     font-size: 1.25rem;
     width: 100%;
-    font-weight: bold;
+    font-weight: 500;
     padding: 1rem;
 }
 
@@ -127,7 +129,7 @@ button:hover {
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    padding: 1rem 3rem;
+    padding: 3rem 6rem;
 }
 
 .texto-info p.mobile {
@@ -141,7 +143,7 @@ button:hover {
 }
 
 .texto-info p {
-    width: 45%;
+    width: 40%;
 }
 
 /*------------------------------------------ tarjetas Info --------------------------------*/
@@ -159,7 +161,7 @@ button:hover {
 }
 
 .box-info {
-    width: 40%;
+    width: 43%;
     padding: 1rem;
     display: flex;
     flex-direction: row;
@@ -195,14 +197,14 @@ button:hover {
     flex-direction: column;
     flex-wrap: wrap;
     align-content: space-around;
-    padding: 2rem 1.6rem;
+    padding: 6rem 1.6rem;
 }
 
 .container-cards {
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex-wrap: wrap;
     padding: 2rem;
 }
@@ -213,7 +215,7 @@ button:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 1rem;
+    /* padding: 1rem; */
     gap: 2rem;
 }
 
@@ -237,8 +239,16 @@ button:hover {
     text-align: center;
 }
 
-.button-more {
-    margin: 0 auto;
+.boton-more {
+    /* margin: 0 auto; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 3rem;
+}
+
+.boton-more button {
+    padding: 1rem 3rem;
 }
 
 h3 {
@@ -248,15 +258,19 @@ h3 {
 }
 
 /*----------------------------------------- text info 2 -----------------------------------------*/
+.titulo-mobile {
+    display:none;
+}
+
 .texto-info.t2{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 2rem 10rem;
+    padding: 2rem 12rem;
 }
 .texto-info.t2 h4 {
-    width: 40%;
+    width: 35%;
     font-size: 2rem;
 }
 
@@ -278,12 +292,13 @@ footer {
     background-color: #1e1e26;
     color: #FFFFFF;
     width: 100%;
-    padding: 4rem 2rem;
+    padding: 4rem 8rem;
+    display: flex;
+    flex-direction: column;
 }
 
 .menu-footer {
     display: flex;
-    flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
@@ -295,7 +310,7 @@ footer {
 
 .box-listas {
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
     flex-wrap: wrap;
     flex-grow: 2;
 }
@@ -305,7 +320,7 @@ footer {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-start;
     align-content: center;
     gap: 2rem;
@@ -328,14 +343,14 @@ footer {
     align-items: center;
 }
 
-.box-footer.box {
+/* .box-footer.box {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: flex-end;
     padding-right: 1rem;
-}
+} */
 
 .box2 input[type=text] {
     border-radius: 2rem;
@@ -346,7 +361,7 @@ footer {
 }
 .lista-redes {
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
     justify-content: space-evenly;
     flex-wrap: wrap;
     width: 100%;
@@ -379,13 +394,13 @@ footer {
     font-size: 0.75rem;
 }
 
-.derechos-mobile {
+/* .derechos-mobile {
     display: none;
     width: 100%;
     color: #8C8C94;
     font-style: normal;
     text-align: center;
-}
+} */
 
 .box-footer.box button {
     background-color: #8B48BF;
@@ -450,6 +465,11 @@ footer {
 
     .portada .portada-derecha h1 {
         width: 100%;
+        font-size: 2.8rem;
+    }
+    .portada .portada-derecha p {
+        width: 100%;
+        font-size: 1rem;
     }
 
     .texto-info {
@@ -466,6 +486,8 @@ footer {
 
     .texto-info p {
         width: 100%;
+        text-align: left;
+        font-size: 1.1rem;
     }
 
     .texto-info p.mobile {
@@ -496,7 +518,21 @@ footer {
         box-shadow: -3.1rem 0 0 0 rgba(139, 72, 191, 0.30);
     }
 
+    .box-info-contenido p {
+        text-align: left;
+        font-size: 0.9rem;
+        line-height: 1.5rem;
+    }
+
     /*----------------------------------------------------------------*/
+
+    .menu-cards {
+        padding: 2rem 1.6rem;
+    }
+
+    .menu-cards h3 {
+        font-size: 2rem;
+    }
 
     .container-cards {
         flex-direction: column;
@@ -506,6 +542,11 @@ footer {
     .personaje {
         width: 100%;
         padding: 1.25rem;
+    }
+
+    .box-card-texto p {
+        font-size: 0.75rem;
+        line-height: 1.4rem;
     }
 
     .personaje.p1 {
@@ -537,8 +578,20 @@ footer {
         color: #FFFFFF;
     }
 
+    /*---------------------------------------------------------------*/
+
+    .titulo-escritorio{
+        display: none;
+    }
+
+    .titulo-mobile {
+        font-size: 2rem;
+    }
     /*---------------------------- footer ---------------------------*/
 
+    footer {
+        padding: 3rem 1rem;
+    }
     .menu-footer {
         flex-direction: column-reverse;
         justify-content: center;
@@ -575,10 +628,13 @@ footer {
     }
 
     .derechos {
-        display: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem;
     }
 
-    .derechos-mobile {
+    /*.derechos-mobile {
         display: block;
-    }
+    } */
 }
