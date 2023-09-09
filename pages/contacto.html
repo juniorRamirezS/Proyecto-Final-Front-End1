@@ -58,6 +58,17 @@
                 </div>
                 <br>
                 <div>
+                    <label for="documento">Tipo de Documento:</label>
+                    <select name="documento" id="documento">
+                        <option selected>Seleccione un documento</option>
+                        <option value="DNI">DNI</option>
+                        <option value="PASAPORTE">PASAPORTE</option>
+                        <option value="CURP">CURP</option>
+                        <option value="IMSS">IMSS</option>
+                    </select>
+                </div>
+                <br>
+                <div>
                     <label for="" tipo-doc>Tipo de Documento:</label>
                     <br>
                     <br>
@@ -71,15 +82,16 @@
                             value="IMSS"> IMSS</label>
                 </div>
                 <br>
+                <div>
+                    <label for="nacimiento">Fecha de Nacimiento</label>
+                    <input type="date" id="nacimiento" name="nacimiento" min="1970-01-01">
+                </div>
+                <br>
                 <div class="input-container">
                     <input type="text" id="asunto" placeholder="Asunto" required>
                     <label for="asunto">Asunto</label>
                 </div>
                 <br>
-                <div>
-                    <label for="nacimiento">Fecha de Nacimiento</label>
-                    <input type="date" id="nacimiento" name="nacimiento" min="1970-01-01">
-                </div>
                 <div class="input-container-textarea">
                     <label for="descripcion">Comentario:</label>
                     <br>
@@ -88,8 +100,8 @@
                 </div>
                 <br>
                 <div>
-                    <label for="doc">Imagen Documento</label>
-                    <input type="file" id="doc" accept=".png , .jpg , .pdf" name="doc" multiple>
+                    <label for="imagen-file">Subir archivo: </label>
+                    <input type="file" id="imagen-file" accept=".png , .jpg , .pdf" name="imagen-file" multiple>
                 </div>
                 <br>
                 <div>
